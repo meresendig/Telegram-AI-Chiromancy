@@ -1,15 +1,20 @@
-# Telegram AI Chiromancy Bot with GPT-4o Vision
+# AI-Провидец (Project API) — Модуль Хиромантии
 
-## Запуск на Render
+## Инструкция для Render
 
-1. Установите переменные окружения:
-   - API_TOKEN = Telegram токен
-   - OPENAI_API_KEY = OpenAI API ключ
+1. Создай переменные окружения:
+- TELEGRAM_BOT_TOKEN = Токен от BotFather
+- OPENAI_API_KEY = sk-svcacct-...
+- OPENAI_PROJECT_ID = prj_...
+- OPENAI_ORG_ID = org_...
 
-2. Build Command:
-   pip install -r requirements.txt
+2. Build command:
+pip install -r requirements.txt
 
-3. Start Command:
-   python bot.py
+3. Start command:
+python bot.py
 
-Бот принимает фото ладони и отправляет его в GPT-4o через base64-кодировку.
+## Что делает бот:
+- Принимает изображение ладони
+- Отправляет запрос в GPT-4o с изображением
+- Возвращает эзотерический анализ
